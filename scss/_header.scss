@@ -1,0 +1,79 @@
+@use '_colores';
+@use '_fuentes';
+@use '_spacing';
+@use '_utils';
+
+
+
+.header{
+    @include spacing.layout-responsive;
+    height: 70px;
+    width: 100%;
+    position: relative;
+    background-color: colores.$Bg-Green-0;
+    @include utils.flex-layout(space-between, center, row);
+
+    &__logo{
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+    }
+   
+    &__nav{
+   
+    }
+
+    &__list{
+      
+    }
+
+    &__item{
+        
+    }
+
+    &__link{
+        color: colores.$font-primary;
+    }
+
+}
+
+
+
+
+
+
+
+.ham-menu {
+    z-index: 50;
+    height: 45px;
+    width: 38px;
+
+    span {
+      height: 3px;
+      border-radius: 2px;
+      width: 100%;
+      background-color: #fff;
+
+      transform: translate(-50%, -50%);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  
+
+
+  /*Rango Solo mobile*/
+@media screen and (max-width: 767px) {}
+
+
+/*Rango Solo tablet*/
+@media screen and (min-width: 768px) and (max-width:1023px) {}
+
+/*Rango Desktop*/
+
+@media screen and (min-width: 1024px) {
+    .ham-menu {
+        display: none;
+        /* Oculta el ícono del menú en desktop */
+      }
+    
+}

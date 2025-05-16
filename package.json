@@ -1,0 +1,18 @@
+{
+  "name": "Portafolio-2025",
+  "version": "0.0.0",
+  "scripts": {
+    "watchCSS": "sass --watch scss/estilos.scss css/estilos.min.css",
+    "build:css": "sass scss/estilos.scss dist/css/estilos.min.css --style=compressed",
+    "build:assets": "npx cpx2 \"assets/**/*\" dist/assets ",
+    "build:js": "npx cpx2 \"js/**/*\" dist/js ",
+    "build:html": "npx cpx2 index.html dist",
+    "build": "npm run build:css && npm run build:assets && npm run build:js && npm run build:html"
+  },
+  "dependencies": {
+    "sass": "^1.88.0"
+  },
+  "devDependencies": {
+    "cpx2": "^8.0.0"
+  }
+}

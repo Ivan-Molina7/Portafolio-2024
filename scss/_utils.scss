@@ -1,0 +1,37 @@
+@use '_colores';
+@use '_fuentes';
+@use '_spacing';
+
+
+
+@mixin flex-layout($justify: flex-start, $align: stretch, $direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+
+  @mixin no-decoration {
+    list-style: none;
+    text-decoration: none;
+}
+
+.title-section{
+    @include fuentes.font-responsive(title-1);
+    color: colores.$font-primary;
+}
+
+.subtitle-section{
+    @include fuentes.font-responsive(subtitle-merri);
+    color: colores.$font-primary;
+}
+
+.temas-section{
+    @include flex-layout(flex-start, flex-start, column);
+    gap: map-get($map: spacing.$spacing, $key: 24px);
+}
+
+.my{
+    margin-top: map-get($map: spacing.$spacing, $key: 48px) !important;
+    margin-bottom: map-get($map: spacing.$spacing, $key: 48px) !important;
+}

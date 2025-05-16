@@ -1,0 +1,42 @@
+@use "_animaciones.scss";
+@use "_botones.scss";
+@use "_cards.scss";
+@use "_colores.scss";
+@use "_fuentes.scss";
+@use "_header.scss";
+@use "_index.scss";
+@use "_modal.scss";
+@use "_nav.scss";
+@use "_spacing.scss";
+@use "_utils.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;900&family=Lora:wght@400;500;600;700&family=Merriweather:wght@300;400;500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @include utils.no-decoration;
+}
+
+
+/*Rango Solo mobile*/
+@media screen and (max-width: 767px) {}
+
+
+/*Rango Solo tablet*/
+@media screen and (min-width: 768px) and (max-width:1023px) {}
+
+/*Rango Desktop*/
+@media screen and (min-width: 1024px) {}
+
+
+
+/*Rango 992 para abajo*/
+@media screen and (max-width: 992px) {}
+
+/*Rango abiertos*/
+
+@media screen and (min-width: 768px) {}
+

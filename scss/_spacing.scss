@@ -1,0 +1,58 @@
+// Gutters
+$gutter-mobile: 12px;
+$gutter-tablet: 16px;
+$gutter-desktop: 20px;
+
+// Padding laterales
+$padding-mobile: 16px;
+$padding-tablet: 32px;
+$padding-desktop: 120px;
+
+
+
+@mixin layout-responsive() {
+  // Mobile 
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    padding-left: $padding-tablet;
+    padding-right: $padding-tablet;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1024px) {
+    padding-left: $padding-desktop;
+    padding-right: $padding-desktop;
+  }
+}
+
+@mixin gutter-responsive() {
+  // Mobile 
+  gap: $gutter-mobile;
+
+  // Tablet
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    gap: $gutter-tablet;
+  }
+
+  // Desktop
+  @media screen and (min-width: 1024px) {
+    gap: $gutter-desktop;
+  }
+}
+
+
+
+
+// Espaciados generales
+$spacing: (70px: 70px,
+  64px: 64px,
+  48px: 48px,
+  32px: 32px,
+  24px: 24px,
+  16px: 16px,
+  12px: 12px,
+  8px: 8px,
+  4px: 4px);

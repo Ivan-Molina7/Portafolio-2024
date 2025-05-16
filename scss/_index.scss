@@ -1,0 +1,132 @@
+@use '_animaciones';
+@use '_colores';
+@use '_fuentes';
+@use '_spacing';
+@use '_utils';
+
+
+
+.hero{
+    margin-top: 50px;
+    @include spacing.layout-responsive;
+    @include utils.flex-layout(center, center, column);
+    gap: map-get($map: spacing.$spacing, $key: 48px);
+    padding-top:  map-get($map: spacing.$spacing, $key: 48px);
+    padding-bottom:  map-get($map: spacing.$spacing, $key: 48px);
+    text-align: center;
+
+
+    &__titles{
+        @include utils.flex-layout(center, center, column);
+        position: relative;
+
+        .estado{
+            @include utils.flex-layout(center, center, row);
+            gap: map-get($map: spacing.$spacing, $key: 4px);
+            padding: 4px 8px;
+            color: colores.$font-primary;
+            background-color: colores.$Green-Dark;
+            font-size: 12px;
+            font-family: lato, sans-serif;
+            position: absolute;
+            right: 0;
+            top: -48px;
+
+            img{
+                animation: respirar 2s ease-in-out infinite;
+            }
+        }
+
+
+
+
+        .hero__title{
+            font-size: 68px;
+            color: colores.$font-primary;
+            font-family: Lora, serif;
+            font-weight: map-get(fuentes.$font-weight-map, medium);
+        }
+    
+
+        .hero__subtitles{
+            @include utils.flex-layout(center, center, column);
+            gap: map-get($map: spacing.$spacing, $key: 12px);
+
+            .hero__subtitle{
+                @include fuentes.font-responsive(subtitle-lato);
+                font-weight: bold;
+                color: colores.$font-primary;
+
+                span{
+                   color: colores.$Green-Light;
+                }
+            }
+
+
+            .hero__pais{
+                @include fuentes.font-responsive(text-md);
+                color: colores.$font-secondary;
+            }
+        }
+    }
+
+    &__buttons{
+        @include utils.flex-layout(center, center, row);
+        @include spacing.gutter-responsive;
+        flex-wrap: wrap
+    }
+}
+
+.proyectos{
+    @include spacing.layout-responsive;
+    @include utils.flex-layout(flex-start, flex-start, column);
+    gap: map-get($map: spacing.$spacing, $key: 48px);
+
+    &__container{
+        @include utils.flex-layout(flex-start, flex-start, column);
+        gap: map-get($map: spacing.$spacing, $key: 24px);
+    }
+
+    .temas-section{
+  
+        .proyectos__subtitle{
+        }
+
+        .proyectos__cards{
+            @include utils.flex-layout(flex-start, flex-start, row);
+            @include spacing.gutter-responsive;
+            flex-wrap: wrap;
+        }
+
+    
+    }
+}
+
+.habilidades{
+    @include spacing.layout-responsive;
+    @include utils.flex-layout(flex-start, flex-start, column);
+    gap: map-get($map: spacing.$spacing, $key: 48px);
+
+    &__container{
+        @include utils.flex-layout(flex-start, flex-start, column);
+        gap: map-get($map: spacing.$spacing, $key: 48px);
+
+        .habilidades__section{
+            @include utils.flex-layout(flex-start, flex-start, column);
+            gap: map-get($map: spacing.$spacing, $key: 16px);
+        
+            .habilidades__subtitle{
+            }
+
+            .habilidades__cards{
+                @include utils.flex-layout(flex-start, flex-start, row);
+                @include spacing.gutter-responsive;
+                flex-wrap: wrap;
+            }
+
+     
+    
+            
+        }
+    }
+}
