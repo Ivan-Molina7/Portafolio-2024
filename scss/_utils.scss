@@ -31,7 +31,39 @@
     gap: map-get($map: spacing.$spacing, $key: 24px);
 }
 
-.my{
-    margin-top: map-get($map: spacing.$spacing, $key: 48px) !important;
-    margin-bottom: map-get($map: spacing.$spacing, $key: 48px) !important;
+.max-width-section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.mb-section{
+    margin-bottom: 120px !important;
+}
+
+.mt-section{
+    margin-top: 120px !important;
+}
+
+
+
+/*Rango Solo mobile*/
+@media screen and (max-width: 767px) {}
+
+
+/*Rango Solo tablet*/
+@media screen and (min-width: 768px) and (max-width:1023px) {}
+
+/*Rango Desktop*/
+@media screen and (min-width: 1024px) {
+
+    .mb-section{
+        margin-bottom: 220px !important;
+    }
+    
+    .mt-section{
+        margin-top: 220px !important;
+    }
+    
+    
 }

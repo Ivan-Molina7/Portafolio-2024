@@ -52,7 +52,7 @@ $font-styles-mobile: (
   subtitle-lato:  (size: 22px, line-height: 1.2, weight: $weight-normal, font-family: $font-family-secondary),
   subtitle-merri: (size: 20px, line-height: 1.2, weight: $weight-normal, font-family: $font-family-tertiary),
   text-md:        (size: 16px, line-height: 1.2, weight: $weight-normal, font-family: $font-family-secondary),
-  text-mobile:    (size: 14px, line-height: 1.2, weight: $weight-normal, font-family: $font-family-secondary)
+  text:    (size: 14px, line-height: 1.2, weight: $weight-normal, font-family: $font-family-secondary)
 );
 
 // Mixin para la fuente responsive con font-family

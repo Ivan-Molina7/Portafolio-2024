@@ -6,12 +6,12 @@ $gutter-desktop: 20px;
 // Padding laterales
 $padding-mobile: 16px;
 $padding-tablet: 32px;
-$padding-desktop: 120px;
+$padding-desktop-mid: 48px;
 
 
 
 @mixin layout-responsive() {
-  // Mobile 
+  // Mobile
   padding-left: $padding-mobile;
   padding-right: $padding-mobile;
 
@@ -21,13 +21,18 @@ $padding-desktop: 120px;
     padding-right: $padding-tablet;
   }
 
-  // Desktop
-  @media screen and (min-width: 1024px) {
-    padding-left: $padding-desktop;
-    padding-right: $padding-desktop;
+  // Desktop intermedio
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    padding-left: $padding-desktop-mid;
+    padding-right: $padding-desktop-mid;
+  }
+
+  // Desktop grande (1200px en adelante)
+  @media screen and (min-width: 1248px) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
-
 @mixin gutter-responsive() {
   // Mobile 
   gap: $gutter-mobile;
@@ -47,7 +52,8 @@ $padding-desktop: 120px;
 
 
 // Espaciados generales
-$spacing: (70px: 70px,
+$spacing: (
+  70px: 70px,
   64px: 64px,
   48px: 48px,
   32px: 32px,

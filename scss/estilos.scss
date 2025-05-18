@@ -2,11 +2,14 @@
 @use "_botones.scss";
 @use "_cards.scss";
 @use "_colores.scss";
+@use "_faq.scss";
 @use "_fuentes.scss";
+@use "_form.scss";
 @use "_header.scss";
 @use "_index.scss";
 @use "_modal.scss";
 @use "_nav.scss";
+@use "_proyecto.scss";
 @use "_spacing.scss";
 @use "_utils.scss";
 
@@ -18,25 +21,46 @@
     padding: 0;
     box-sizing: border-box;
     @include utils.no-decoration;
+    color: white
 }
 
+
+body{
+    background-image: url("../assets/img/Bg-borrador1.png");
+
+}
 
 /*Rango Solo mobile*/
 @media screen and (max-width: 767px) {}
 
 
 /*Rango Solo tablet*/
-@media screen and (min-width: 768px) and (max-width:1023px) {}
-
-/*Rango Desktop*/
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 768px) and (max-width:1023px) {
 
 
+}
 
-/*Rango 992 para abajo*/
-@media screen and (max-width: 992px) {}
-
-/*Rango abiertos*/
+/*Rango Tablet >*/
 
 @media screen and (min-width: 768px) {}
+
+
+
+/*Rango Desktop >*/
+@media screen and (min-width: 1024px) {
+
+}
+
+
+/*Rango Desktop gap*/
+@media screen and (min-width: 1024px) and (max-width:1247px) {
+
+
+}
+
+
+/*Rango desktop xl*/
+@media screen and (min-width: 1248px) {
+
+}
 
