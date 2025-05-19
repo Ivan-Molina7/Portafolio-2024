@@ -49,10 +49,14 @@ function cambiarFondoConDebounce() {
 
 // Precarga de imágenes (opcional pero recomendado)
 const fondos = [
-  "../assets/img/Backgrounds/Bg-borrador-1.png",
-  "../assets/img/Backgrounds/Bg-borrador-3.png",
-  "../assets/img/Backgrounds/Bg-borrador-5.png",
-  "../assets/img/Backgrounds/Bg-borrador-8.png",
+  "../assets/img/Backgrounds/bg1.webp",
+  "../assets/img/Backgrounds/bg2.webp",
+  "../assets/img/Backgrounds/bg4.webp",
+  "../assets/img/Backgrounds/bg7.webp",
+  "../assets/img/Backgrounds/bg8.webp",
+  "../assets/img/Backgrounds/bgContact2.webp",
+  "../assets/img/Backgrounds/bgProyecto.webp",
+  "../assets/img/Backgrounds/Black.webp",
 ];
 
 fondos.forEach((src) => {

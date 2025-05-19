@@ -394,6 +394,7 @@
   gap: 32px;
 }
 .faq__item {
+  width: 100%;
   border: 1px solid #d9d9d9;
 }
 .faq__item .faq__pregunta {
@@ -492,7 +493,9 @@
 }
 
 .form {
-  background-image: url("../assets/img/Backgrounds/Bg-borrador-3.png");
+  background-color: #000;
+  background-image: url("../assets/img/Backgrounds/bgContact2.webp");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -943,6 +946,7 @@
   gap: 12px;
   color: #ffffff;
   font-family: lora, serif;
+  width: 115px;
   font-size: 20px;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 2px;
@@ -1702,6 +1706,12 @@
 /*Rango Desktop >*/
 /*Rango Desktop gap*/
 /*Rango desktop xl*/
+.body--proyecto {
+  background-image: url(../assets/img/Backgrounds/bgProyecto.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .hero-proyecto {
   margin-top: 80px;
   padding-left: 16px;
@@ -1858,6 +1868,7 @@
 }
 .hero-proyecto__container .hero-proyecto__content .hero-proyecto__botones .hero-proyecto__btn {
   width: auto;
+  min-width: 120px;
 }
 
 .proyecto-objetivos {
@@ -2221,7 +2232,8 @@ html {
 }
 
 .background-container {
-  background-image: url("../assets/img/Backgrounds/Black.png");
+  background-color: #000;
+  background-image: url("../assets/img/Backgrounds/Black.webp");
   position: fixed;
   top: 0;
   left: 0;

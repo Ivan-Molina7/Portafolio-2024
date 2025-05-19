@@ -4,6 +4,11 @@
 @use '_spacing';
 @use '_utils';
 
+.body--proyecto{
+    background-image: url(../assets/img/Backgrounds/bgProyecto.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .hero-proyecto {
     margin-top: 80px;
@@ -84,6 +89,7 @@
 
                 .hero-proyecto__btn {
                     width: auto;
+                    min-width: 120px
                 }
             }
         }

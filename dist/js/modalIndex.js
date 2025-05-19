@@ -15,7 +15,7 @@ const modalContent = [
     {
       titulo: "I.T.I (Instituto Tecnológico de Informatica)",
       nota: "11",
-      imagen: "assets/img/Bg-borrador1.png",
+      imagen: "assets/img/about/biosDiploma.png",
       alt: "Descripción imagen 1"
     },
     {
@@ -27,7 +27,7 @@ const modalContent = [
     {
       titulo: "Diseñador Digital orientación web (ORT)",
       nota: "92%",
-      imagen: "assets/img/Bg-borrador1.png",
+      imagen: "assets/img/about/biosDiploma.png",
       alt: "Descripción imagen 3"
     }
   ];

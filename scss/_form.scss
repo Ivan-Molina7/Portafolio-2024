@@ -5,7 +5,9 @@
 
 
 .form {
-    background-image: url("../assets/img/Backgrounds/Bg-borrador-3.png");
+    background-color: #000;
+    background-image: url("../assets/img/Backgrounds/bgContact2.webp");
+    background-size: cover;
     @include utils.flex-layout(center, center, column);
     gap: map-get($map: spacing.$spacing, $key: 32px);
     width: 100%;

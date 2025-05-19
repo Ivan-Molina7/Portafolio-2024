@@ -6,17 +6,23 @@ const textsToChange = document.querySelectorAll("[data-section]");
 const inputToChange = document.querySelectorAll("[data-input]");
 
 espBtn.addEventListener("click", () => {
+espBtn.style.opacity = "1";
   espBtn.style.fontWeight = "bold";
   espBtn.style.color = "#00C457";
+
   engBtn.style.fontWeight = "400";
   engBtn.style.color = "#fff";
+  engBtn.style.opacity = ".4";
 });
 
 engBtn.addEventListener("click", () => {
+    engBtn.style.opacity = "1";
   engBtn.style.fontWeight = "bold";
   engBtn.style.color = "#00C457";
+
   espBtn.style.fontWeight = "400";
   espBtn.style.color = "#fff";
+  espBtn.style.opacity = ".4";
 });
 
 
@@ -72,11 +78,15 @@ const loadLanguage = () => {
   if (language === "es") {
     espBtn.style.fontWeight = "bold";
     espBtn.style.color = "#00C457";
+
+    engBtn.style.opacity = ".4";
     engBtn.style.fontWeight = "400";
     engBtn.style.color = "#fff";
   } else if (language === "en") {
     engBtn.style.fontWeight = "bold";
     engBtn.style.color = "#00C457";
+
+    espBtn.style.opacity = ".4";
     espBtn.style.fontWeight = "400";
     espBtn.style.color = "#fff";
   }
