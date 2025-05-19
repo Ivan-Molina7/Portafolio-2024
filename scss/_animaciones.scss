@@ -1,4 +1,9 @@
 
+@use '_colores';
+@use '_fuentes';
+@use '_spacing';
+@use '_utils';
+
 @keyframes respirar {
     0%, 100% {
       opacity: 1;
@@ -15,5 +20,14 @@
   }
   50% {
     background-color: #003327;
+  }
+}
+
+@keyframes aprendiendo {
+  0%, 100% {
+    color: #fff ;
+  }
+  50% {
+    color: colores.$Green-Medium;
   }
 }

@@ -1,0 +1,53 @@
+{
+  "header": {
+    "proyectos": "Proyectos",
+    "habilidades": "Habilidades",
+    "sobreMi": "Sobre mi",
+    "contacto": "Contacto",
+    "btnContacto": "Contacto"
+  },
+
+  "hero": {
+    "ofertas": "Abierto a ofertas",
+    "nombre": "IVAN MOLINA",
+    "descripcion": "<span>Desarrollador Front-end Junior</span>, aspirando a ser<br>Full-stack designer.",
+    "ubicacion": "Montevideo, Uruguay",
+    "leerMas": "Leer más",
+    "sobreMi": "Sobre mi"
+  },
+  "proyectos": {
+    "titulo": "PROYECTOS",
+    "trabajosTitulo": "TRABAJOS",
+    "proyectosPersonalesTitulo": "PROYECTOS PERSONALES",
+    "expandirBtn": "Expandir"
+  },
+  "habilidades": {
+    "titulo": "HABILIDADES",
+    "programacionTitulo": "Programación",
+    "disenoTitulo": "Diseño",
+    "aprendiendoTitulo": "Aprendiendo..."
+  },
+  "about": {
+    "titulo": "SOBRE MI",
+    "parrafo1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
+    "extraTitulo": "Extra",
+    "parrafo2": "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    "anio0": "2019",
+    "expandir0": "Expandir",
+    "anio1": "2022",
+    "expandir1": "Expandir",
+    "anio2": "2025",
+    "expandir2": "Expandir"
+  },
+  "contacto": {
+    "titulo": "CONTACTO",
+    "email": "contacto.ivanmolina@gmail.com",
+    "labelNombre": "Nombre",
+    "placeholderNombre": "Nombre",
+    "labelCorreo": "Correo",
+    "placeholderCorreo": "Email",
+    "labelMensaje": "Mensaje",
+    "placeholderMensaje": "Mensaje...",
+    "btnEnviar": "Enviar"
+  }
+}

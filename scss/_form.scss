@@ -61,7 +61,16 @@
 }
 
 /*Rango Desktop*/
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    .form {
+        max-width: 431px;
+        padding: map-get($map: spacing.$spacing, $key: 48px);
+
+        button {
+            align-self: center;
+        }
+    }
+}
 
 
 /*Rango Desktop gap*/

@@ -23,14 +23,6 @@
   }
 
 
-  .overlay-header{
-    top: 0;
-    z-index: 1000;
-    display: none;
-    position: absolute;
-    inset: 0;
-    background: rgba(20, 20, 20, 0.541);
-  }
 
   .ham-menu {
     width: 30px;
@@ -50,9 +42,10 @@
     }
   }
 
-  .ham-menu.open .overlay-header{
-    display: block;
-  }
+
+
+
+
 
   .ham-menu.open span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);

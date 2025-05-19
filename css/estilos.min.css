@@ -1,21 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;500;600;700;900&family=Lora:wght@400;500;600;700&family=Merriweather:wght@300;400;500;700;900&display=swap");
-@keyframes respirar {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.6;
-  }
-}
-@keyframes backgroundAboutImages {
-  0%, 100% {
-    background-color: #001A1B;
-  }
-  50% {
-    background-color: #003327;
-  }
-}
 /*Verdes*/
 /*Para botones*/
 /*Verdes Backgrounds*/
@@ -26,7 +10,6 @@
   font-weight: 500;
   font-family: "Lora", serif;
   color: #ffffff;
-  white-space: collapse;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .title-section {
@@ -96,12 +79,20 @@
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
+  width: 100%;
 }
 
 .overflow-section-100vh--hero {
   justify-content: flex-start;
 }
 
+/*Rango Solo mobile*/
+@media screen and (max-width: 360px) {
+  .title-section {
+    font-size: 42px;
+    color: #ffffff;
+  }
+}
 /*Rango Solo mobile*/
 @media screen and (max-width: 767px) {
   .overflow-section-100vh {
@@ -133,6 +124,36 @@
   }
   .mt-section {
     margin-top: 220px !important;
+  }
+  .overflow-section-100vh {
+    padding: 48px 0;
+  }
+  .overflow-section-100vh--hero {
+    padding: 0;
+  }
+}
+@keyframes respirar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+@keyframes backgroundAboutImages {
+  0%, 100% {
+    background-color: #001A1B;
+  }
+  50% {
+    background-color: #003327;
+  }
+}
+@keyframes aprendiendo {
+  0%, 100% {
+    color: #fff;
+  }
+  50% {
+    color: #0A8C5D;
   }
 }
 .btn {
@@ -554,6 +575,15 @@
   }
 }
 /*Rango Desktop*/
+@media screen and (min-width: 1024px) {
+  .form {
+    max-width: 431px;
+    padding: 48px;
+  }
+  .form button {
+    align-self: center;
+  }
+}
 /*Rango Desktop gap*/
 @media screen and (min-width: 1024px) and (max-width: 1247px) {
   .form {
@@ -604,14 +634,6 @@
   width: 50px;
   object-fit: contain;
 }
-.header .overlay-header {
-  top: 0;
-  z-index: 1000;
-  display: none;
-  position: absolute;
-  inset: 0;
-  background: rgba(20, 20, 20, 0.541);
-}
 .header .ham-menu {
   width: 30px;
   height: 20px;
@@ -627,9 +649,6 @@
   background-color: #fff; /* color de las líneas */
   border-radius: 2px;
   transition: all 0.3s ease;
-}
-.header .ham-menu.open .overlay-header {
-  display: block;
 }
 .header .ham-menu.open span:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
@@ -872,6 +891,8 @@
   width: 20px;
   border-radius: 50%;
   border: 1px solid #fff;
+  background: transparent;
+  transition: background 0.3s, border 0.3s ease-in-out;
 }
 .hud-secciones .circle--active {
   background-color: #fff;
@@ -1031,6 +1052,9 @@
   align-items: flex-start;
   gap: 16px;
 }
+.habilidades__container .habilidades__section .habilidades__subtitle--aprendiendo {
+  animation: aprendiendo 3s ease infinite;
+}
 .habilidades__container .habilidades__section .habilidades__cards {
   display: flex;
   flex-direction: row;
@@ -1051,6 +1075,7 @@
 }
 
 .about {
+  width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   display: flex;
@@ -1122,12 +1147,12 @@
   }
 }
 .about .timeline {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
-  gap: 48px;
   width: 100%;
 }
 .about .timeline__line {
@@ -2069,7 +2094,7 @@
     flex-direction: row;
   }
   .proyecto-tecnologias__items {
-    gap: 24px;
+    gap: 32px;
   }
 }
 /*Rango Desktop >*/
@@ -2186,12 +2211,16 @@
   scroll-padding-top: 0px;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .background-container {
   background-image: url("../assets/img/Backgrounds/Black.png");
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   z-index: -1;
   overflow: hidden;

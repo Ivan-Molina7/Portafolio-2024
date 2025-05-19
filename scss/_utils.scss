@@ -19,7 +19,6 @@
 .title-section {
     @include fuentes.font-responsive(title-1);
     color: colores.$font-primary;
-    white-space: collapse;
 }
 
 .subtitle-section {
@@ -49,6 +48,7 @@
 .overflow-section-100vh {
     @include flex-layout(center, flex-start, column);
     min-height: 100vh;
+    width: 100%;
 }
 
 .overflow-section-100vh--hero {
@@ -56,6 +56,17 @@
     justify-content: flex-start;
 }
 
+
+
+/*Rango Solo mobile*/
+@media screen and (max-width: 360px) {
+    .title-section {
+       font-size: 42px;
+        color: colores.$font-primary;
+    }
+    
+    
+}
 
 
 /*Rango Solo mobile*/
@@ -79,7 +90,7 @@
 
     .overflow-section-100vh {
         min-height: 80vh;
-      margin: 150px 0;
+        margin: 150px 0 ;
     }
 
     .overflow-section-100vh--hero {
@@ -110,6 +121,16 @@
     .mt-section {
         margin-top: 220px !important;
     }
+
+
+    .overflow-section-100vh {
+        padding: map-get($map: spacing.$spacing, $key: 48px) 0;
+    }
+
+    .overflow-section-100vh--hero {
+        padding:  0;
+    }
+    
 
 
 }

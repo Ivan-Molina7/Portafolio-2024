@@ -93,6 +93,8 @@
         width: 20px;
         border-radius: 50%;
        border: 1px solid #fff;
+       background: transparent;
+       transition: background 0.3s, border 0.3s ease-in-out;
     }
 
     .circle--active{
@@ -207,6 +209,10 @@
             .habilidades__subtitle{
             }
 
+            .habilidades__subtitle--aprendiendo{
+                animation: aprendiendo 3s ease infinite;
+            }
+
             .habilidades__cards{
                 @include utils.flex-layout(flex-start, flex-start, row);
                 @include spacing.gutter-responsive;
@@ -222,6 +228,7 @@
 }
 
 .about{
+    width: 100%;
     @include spacing.layout-responsive;
     @include utils.flex-layout(flex-start, flex-start, column);
     gap: map-get($map: spacing.$spacing, $key: 70px);
@@ -229,6 +236,7 @@
     
 
     &__content{
+      
         @include utils.flex-layout(flex-start, flex-start, column);
         gap: map-get($map: spacing.$spacing, $key: 48px);
 
@@ -248,9 +256,10 @@
     }
 
     .timeline{
+        width: 100%;
         position: relative;
         @include utils.flex-layout(space-around, flex-start, row);
-        gap: map-get($map: spacing.$spacing, $key: 48px);
+    
         width: 100%;
 
         &__line{

@@ -219,7 +219,7 @@
     }
 
     .proyecto-tecnologias__items {
-        gap: map-get($map: spacing.$spacing, $key: 24px);
+        gap: map-get($map: spacing.$spacing, $key: 32px);
 
     }
 }
