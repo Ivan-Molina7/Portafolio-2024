@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/img/Logos/Logo_white.png" type="image/x-icon">
     <title>CulPadel</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.min.css">
 </head>
 <body class="body--proyecto">
@@ -56,20 +57,20 @@
       </header>
 
       <section class="hero-proyecto mb-section max-width-section">
-        <div class="hero-proyecto__image-container">
-          <img src="../assets/img/proyectos/culPadel/Home.png" alt="Mockup CulPadel" class="hero-proyecto__image">
+        <div class="hero-proyecto__image-container" data-aos="fade-right" data-aos-delay="100">
+          <img src="../assets/img/proyectos/culPadel/Home.webp" alt="Mockup CulPadel" class="hero-proyecto__image">
           <div class="hero-proyecto__overlay" data-section="proyecto" data-value="overlayTexto">
             <img src="../assets/img/Icons/White/touch.png" alt="tocar pantalla icono">
             Haz click para ver más pantallas
           </div>
         </div>
-        <div class="hero-proyecto__container">
-          <h1 class="hero-proyecto__titulo">CulPadel</h1>
-          <div class="hero-proyecto__content">
+        <div class="hero-proyecto__container" data-aos="fade-left" data-aos-delay="300">
+          <h1 class="hero-proyecto__titulo" data-aos="fade-left" data-aos-delay="400">CulPadel</h1>
+          <div class="hero-proyecto__content" data-aos="fade-left" data-aos-delay="500">
             <p class="hero-proyecto__descripcion" data-section="proyecto" data-value="culPadel_descripcion">
               CulPadel fue un ejercicio final de la facultad donde creamos una imagen corporativa y un sitio web para reservar canchas y salones, elegir fecha, turno y método de pago, representando toda la información proporcionada.
             </p>
-            <div class="hero-proyecto__botones">
+            <div class="hero-proyecto__botones" data-aos="fade-left" data-aos-delay="600">
               <a href="https://www.behance.net/gallery/225458053/CulPadel-Diseno-UXUI-para-App-Movil-Deportiva" target="_blank" class="hero-proyecto__btn btn btn--secondary" data-section="proyecto" data-value="btnMasInfo">
                 Más información en mi Behance
               </a>
@@ -86,9 +87,9 @@
       <div class="modal-carousel__body">
         <button class="modal-carousel__arrow modal-carousel__arrow--left" aria-label="Anterior"><img src="../assets/img/Icons/White/nav-left.png" alt="Anterior"></button>
         <div class="modal-carousel__img-frame">
-          <img src="../assets/img/proyectos/culPadel/Home.png" alt="Pantalla 1 del proyecto" class="modal-carousel__img active" />
-          <img src="../assets/img/proyectos/culPadel/2.png" alt="Pantalla 2 del proyecto" class="modal-carousel__img" />
-          <img src="../assets/img/proyectos/culPadel/3.png" alt="Pantalla 3 del proyecto" class="modal-carousel__img" />
+          <img src="../assets/img/proyectos/culPadel/Home.webp" alt="Pantalla 1 del proyecto" class="modal-carousel__img active" />
+          <img src="../assets/img/proyectos/culPadel/2.webp" alt="Pantalla 2 del proyecto" class="modal-carousel__img" />
+          <img src="../assets/img/proyectos/culPadel/3.webp" alt="Pantalla 3 del proyecto" class="modal-carousel__img" />
         </div>
         <button class="modal-carousel__arrow modal-carousel__arrow--right" aria-label="Siguiente"><img src="../assets/img/Icons/White/nav-right.png" alt="Siguiente"></button>
       </div>
@@ -96,21 +97,21 @@
   </div>
   
   <section class="proyecto-objetivos mb-section max-width-section">
-    <h2 class="proyecto-objetivos__titulo" data-section="objetivos" data-value="titulo">Objetivos del proyecto</h2>
+    <h2 class="proyecto-objetivos__titulo" data-section="objetivos" data-value="titulo" data-value="titulo" data-aos="fade-right" data-aos-delay="100">Objetivos del proyecto</h2>
     <div class="proyecto-objetivos__items">
-      <div class="proyecto-objetivos__item">
+      <div class="proyecto-objetivos__item" data-value="titulo" data-aos="fade-right" data-aos-delay="200">
         <h3 class="proyecto-objetivos__item-titulo">1.</h3>
         <p class="proyecto-objetivos__item-texto" data-section="objetivos" data-value="culPadel_item1Texto">
           Crear una plataforma intuitiva para reservar canchas y salones, facilitando la selección de fecha, turno y método de pago.
         </p>
       </div>
-      <div class="proyecto-objetivos__item">
+      <div class="proyecto-objetivos__item" data-value="titulo" data-aos="fade-right" data-aos-delay="300">
         <h3 class="proyecto-objetivos__item-titulo">2.</h3>
         <p class="proyecto-objetivos__item-texto" data-section="objetivos" data-value="culPadel_item2Texto">
           Diseñar una experiencia de usuario clara y funcional que represente la imagen corporativa creada en el proyecto.
         </p>
       </div>
-      <div class="proyecto-objetivos__item">
+      <div class="proyecto-objetivos__item" data-value="titulo" data-aos="fade-right" data-aos-delay="400">
         <h3 class="proyecto-objetivos__item-titulo">3.</h3>
         <p class="proyecto-objetivos__item-texto" data-section="objetivos" data-value="culPadel_item3Texto">
           Facilitar la gestión de reservas y pagos, mejorando la interacción entre usuarios y la plataforma.
@@ -121,26 +122,27 @@
   
   
 
-    <section class="proyecto-tecnologias  mb-section">
-      <h2 class="proyecto-tecnologias__titulo" data-section="tecnologias" data-value="tecnologiasTitulo">Tecnologías utilizadas</h2>
 
-        <div class="proyecto-tecnologias__items">
-            <img src="../assets/img/habilidades/html.png" alt="" class="proyecto-tecnologias__item">
-            <img src="../assets/img/habilidades/css.png" alt="" class="proyecto-tecnologias__item">
-            <img src="../assets/img/habilidades/js.png" alt="" class="proyecto-tecnologias__item">
-            <img src="../assets/img/habilidades/sass.png" alt="" class="proyecto-tecnologias__item">
-            <img src="../assets/img/habilidades/mongo.png" alt="" class="proyecto-tecnologias__item">
-            <img src="../assets/img/habilidades/node.png" alt="" class="proyecto-tecnologias__item">
-            <img src="../assets/img/habilidades/figma.png" alt="" class="proyecto-tecnologias__item">
-            
-        </div>
-    </section>
+  <section class="proyecto-tecnologias mb-section">
+    <h2 class="proyecto-tecnologias__titulo" data-section="tecnologias" data-value="tecnologiasTitulo" data-aos="fade-up" data-aos-delay="100">
+      Tecnologías utilizadas
+    </h2>
+    <div class="proyecto-tecnologias__items">
+      <img src="../assets/img/habilidades/html.png" alt="HTML" class="proyecto-tecnologias__item" data-aos="fade-up" data-aos-delay="200">
+      <img src="../assets/img/habilidades/css.png" alt="CSS" class="proyecto-tecnologias__item" data-aos="fade-up" data-aos-delay="300">
+      <img src="../assets/img/habilidades/js.png" alt="JavaScript" class="proyecto-tecnologias__item" data-aos="fade-up" data-aos-delay="400">
+      <img src="../assets/img/habilidades/sass.png" alt="Sass" class="proyecto-tecnologias__item" data-aos="fade-up" data-aos-delay="500">
+      <img src="../assets/img/habilidades/mongo.png" alt="MongoDB" class="proyecto-tecnologias__item" data-aos="fade-up" data-aos-delay="600">
+      <img src="../assets/img/habilidades/node.png" alt="Node.js" class="proyecto-tecnologias__item" data-aos="fade-up" data-aos-delay="700">
+      <img src="../assets/img/habilidades/figma.png" alt="Figma" class="proyecto-tecnologias__item" data-aos="fade-up" data-aos-delay="800">
+    </div>
+  </section>
 
     <section class="proyecto-about mb-section max-width-section">
-      <h2 class="proyecto-about__titulo" data-section="proyecto_about" data-value="sobrePaginaTitulo">Sobre la página</h2>
+      <h2 class="proyecto-about__titulo" data-section="proyecto_about" data-value="sobrePaginaTitulo" data-aos="fade-up" data-aos-delay="100">Sobre la página</h2>
     
       <ul class="faq">
-        <li class="faq__item">
+        <li class="faq__item" data-aos="fade-up" data-aos-delay="200">
           <div class="faq__pregunta">
             <div class="faq__icon"><div></div><div></div></div>
             <span data-section="proyecto_about" data-value="culPadel_pregunta1">
@@ -153,7 +155,7 @@
             </p>
           </div>
         </li>
-        <li class="faq__item">
+        <li class="faq__item" data-aos="fade-up" data-aos-delay="300">
           <div class="faq__pregunta">
             <div class="faq__icon"><div></div><div></div></div>
             <span data-section="proyecto_about" data-value="culPadel_pregunta2">
@@ -166,7 +168,7 @@
             </p>
           </div>
         </li>
-        <li class="faq__item">
+        <li class="faq__item" data-aos="fade-up" data-aos-delay="400">
           <div class="faq__pregunta">
             <div class="faq__icon"><div></div><div></div></div>
             <span data-section="proyecto_about" data-value="culPadel_pregunta3">
@@ -182,7 +184,10 @@
       </ul>
     </section>
     
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="../js/proyecto.js"></script>
     <script src="../js/modal.js"></script>
     <script src="../js/header.js"></script>

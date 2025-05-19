@@ -202,6 +202,22 @@
 
 /*Rango Solo mobile*/
 @media screen and (max-width: 767px) {
+
+    .modal{
+        padding: 30px ;
+    
+    
+    
+        .close {
+           display: none;
+       
+        }
+    
+        
+    }
+
+    
+
     .modal-carousel {
 
 

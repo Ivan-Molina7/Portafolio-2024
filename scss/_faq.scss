@@ -9,6 +9,7 @@
     @include utils.no-decoration;
     @include utils.flex-layout(flex-start, flex-start, column);
     gap: map-get($map: spacing.$spacing, $key: 32px);
+    width: 100%;
 
     &__item{
         width: 100%;

@@ -392,6 +392,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 32px;
+  width: 100%;
 }
 .faq__item {
   width: 100%;
@@ -1677,6 +1678,12 @@
 
 /*Rango Solo mobile*/
 @media screen and (max-width: 767px) {
+  .modal {
+    padding: 30px;
+  }
+  .modal .close {
+    display: none;
+  }
   .modal-carousel__content {
     margin: auto;
     z-index: 1;
