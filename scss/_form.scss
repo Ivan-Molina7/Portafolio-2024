@@ -11,6 +11,7 @@
     @include utils.flex-layout(center, center, column);
     gap: map-get($map: spacing.$spacing, $key: 32px);
     width: 100%;
+    max-width: 350px;
     padding: map-get($map: spacing.$spacing, $key: 32px);
 
     &__group {
