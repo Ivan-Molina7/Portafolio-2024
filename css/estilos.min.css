@@ -131,6 +131,9 @@
   .overflow-section-100vh--hero {
     padding: 0;
   }
+  .overflow-section-100vh--proyectos {
+    padding-top: 0;
+  }
 }
 @keyframes respirar {
   0%, 100% {
@@ -1700,7 +1703,7 @@
 /*Rango Desktop gap*/
 /*Rango desktop xl*/
 .hero-proyecto {
-  margin-top: 120px;
+  margin-top: 80px;
   padding-left: 16px;
   padding-right: 16px;
   display: flex;
@@ -1733,6 +1736,7 @@
   position: relative;
   height: 100%;
   width: 100%;
+  cursor: pointer;
 }
 .hero-proyecto__image-container .hero-proyecto__image {
   object-fit: cover;
@@ -2067,9 +2071,6 @@
 /*Rango Solo mobile*/
 /*Rango Solo tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .hero-proyecto {
-    margin: 0 auto;
-  }
   .hero-proyecto__image-container {
     height: 392px;
   }
@@ -2100,6 +2101,7 @@
 /*Rango Desktop >*/
 @media screen and (min-width: 1024px) {
   .hero-proyecto {
+    margin-top: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2145,6 +2147,9 @@
   }
   .proyecto-objetivos__items {
     gap: 100px;
+  }
+  .proyecto-objetivos__items .proyecto-objetivos__item {
+    max-width: 300px;
   }
   .proyecto-objetivos__items .proyecto-objetivos__item .proyecto-objetivos__item-titulo {
     font-family: "Merriweather", serif;

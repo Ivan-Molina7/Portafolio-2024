@@ -6,7 +6,7 @@
 
 
 .hero-proyecto {
-    margin-top: 120px;
+    margin-top: 80px;
     @include spacing.layout-responsive();
     @include utils.flex-layout(flex-start, flex-start, column);
     gap: map-get($map: spacing.$spacing, $key: 24px);
@@ -17,6 +17,7 @@
         position: relative;
         height: 100%;
         width: 100%;
+        cursor: pointer;
 
 
         .hero-proyecto__image {
@@ -170,8 +171,7 @@
 /*Rango Solo tablet*/
 @media screen and (min-width: 768px) and (max-width:1023px) {
     .hero-proyecto {
-        margin: 0 auto;
-
+   
         &__image-container {
             height: 392px;
 
@@ -185,7 +185,6 @@
     }
 
     .proyecto-objetivos {
-
         &__items {
             gap: map-get($map: spacing.$spacing, $key: 48px);
         }
@@ -210,7 +209,6 @@
 @media screen and (min-width: 768px) {
     .hero-proyecto {
         .hero-proyecto__content {
-
             .hero-proyecto__botones {
                 gap: map-get($map: spacing.$spacing, $key: 24px);
                 flex-direction: row;
@@ -231,15 +229,13 @@
 
 
     .hero-proyecto {
-
+        margin-top: 120px;
         @include utils.flex-layout(space-between, flex-end, row);
 
 
         &__image-container {
-  
             height: 100%;
             width: 570px;
-          
         }
 
 
@@ -264,12 +260,12 @@
 
     .proyecto-objetivos {
 
-
         &__items {
             gap: 100px;
 
 
             .proyecto-objetivos__item {
+                max-width: 300px;
 
                 .proyecto-objetivos__item-titulo {
                     font-family: 'Merriweather', serif;
@@ -308,12 +304,9 @@
 
     .hero-proyecto {
 
-
         &__image-container {
             width:50%;
             height: 100%;
-
-        
         }
 
 
