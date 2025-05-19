@@ -25,7 +25,7 @@ const modalContent = [
       alt: "Descripción imagen 2"
     },
     {
-      titulo: "Diseñador Digital orietación web (ORT)",
+      titulo: "Diseñador Digital orientación web (ORT)",
       nota: "92%",
       imagen: "assets/img/Bg-borrador1.png",
       alt: "Descripción imagen 3"

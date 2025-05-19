@@ -5,7 +5,7 @@
 
 
 .form {
-    background-image: url("../assets/img/Bg-borrador-3.png");
+    background-image: url("../assets/img/Backgrounds/Bg-borrador-3.png");
     @include utils.flex-layout(center, center, column);
     gap: map-get($map: spacing.$spacing, $key: 32px);
     width: 100%;
@@ -81,7 +81,9 @@
 
 
 /*Rango desktop xl*/
-@media screen and (min-width: 1248px) {}
+@media screen and (min-width: 1248px) {
+  
+}
 
 
 

@@ -10,7 +10,7 @@
     @include spacing.layout-responsive();
     @include utils.flex-layout(flex-start, flex-start, column);
     gap: map-get($map: spacing.$spacing, $key: 24px);
-
+    color: colores.$font-primary ;
 
     &__image-container {
         transition: all .3s ease-in-out;
@@ -90,6 +90,7 @@
 }
 
 .proyecto-objetivos {
+    color: colores.$font-primary ;
     @include spacing.layout-responsive();
     @include utils.flex-layout(flex-start, center, column);
     gap: map-get($map: spacing.$spacing, $key: 32px);
@@ -126,6 +127,7 @@
 }
 
 .proyecto-tecnologias {
+    color: colores.$font-primary ;
     @include spacing.layout-responsive();
     @include utils.flex-layout(flex-start, center, column);
     gap: map-get($map: spacing.$spacing, $key: 32px);
@@ -149,6 +151,7 @@
 }
 
 .proyecto-about {
+    color: colores.$font-primary ;
     @include spacing.layout-responsive();
     @include utils.flex-layout(flex-start, flex-start, column);
     gap: map-get($map: spacing.$spacing, $key: 48px);

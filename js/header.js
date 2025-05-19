@@ -5,6 +5,10 @@ const navList = document.querySelector(".nav__list");
 hamMenu.addEventListener("click", () => {
   hamMenu.classList.toggle("open");
   nav.classList.toggle("open");
+
+  if(nav.classList.contains("open")){
+    document.body.style.overflow = 'hidden';
+  }
 });
 
 document.addEventListener("click", (event) => {
@@ -13,6 +17,7 @@ document.addEventListener("click", (event) => {
     !navList.contains(event.target) && // Y el clic NO fue dentro del menú
     !hamMenu.contains(event.target) // Ni en el botón de hamburguesa
   ) {
+    document.body.style.overflow = '';
     nav.classList.remove("open");
     hamMenu.classList.remove("open");
   }

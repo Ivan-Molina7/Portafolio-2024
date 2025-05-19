@@ -9,61 +9,107 @@
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
-  }
+}
 
-  @mixin no-decoration {
+@mixin no-decoration {
     list-style: none;
     text-decoration: none;
 }
 
-.title-section{
+.title-section {
     @include fuentes.font-responsive(title-1);
     color: colores.$font-primary;
+    white-space: collapse;
 }
 
-.subtitle-section{
+.subtitle-section {
     @include fuentes.font-responsive(subtitle-merri);
     color: colores.$font-primary;
 }
 
-.temas-section{
+.temas-section {
     @include flex-layout(flex-start, flex-start, column);
     gap: map-get($map: spacing.$spacing, $key: 24px);
 }
 
-.max-width-section{
+.max-width-section {
     max-width: 1200px;
     margin: 0 auto;
 }
 
 
-.mb-section{
+.mb-section {
     margin-bottom: 120px !important;
 }
 
-.mt-section{
+.mt-section {
     margin-top: 120px !important;
+}
+
+.overflow-section-100vh {
+    @include flex-layout(center, flex-start, column);
+    min-height: 100vh;
+}
+
+.overflow-section-100vh--hero {
+
+    justify-content: flex-start;
 }
 
 
 
 /*Rango Solo mobile*/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .overflow-section-100vh {
+   
+      margin: 100px 0;
+    }
+
+    .overflow-section-100vh--proyectos{
+        margin-top: 0;
+    }
+    
+}
 
 
 /*Rango Solo tablet*/
 @media screen and (min-width: 768px) and (max-width:1023px) {}
 
+@media screen and (max-width: 1023px) {
+
+    .overflow-section-100vh {
+        min-height: 80vh;
+      margin: 150px 0;
+    }
+
+    .overflow-section-100vh--hero {
+        margin: 0;
+        justify-content: center;
+        min-height: 70vh;
+    }
+    
+
+    .overflow-section-100vh--proyectos{
+        margin-top: 0px
+    }
+    
+    
+
+}
+
+
+
+
 /*Rango Desktop*/
 @media screen and (min-width: 1024px) {
 
-    .mb-section{
+    .mb-section {
         margin-bottom: 220px !important;
     }
-    
-    .mt-section{
+
+    .mt-section {
         margin-top: 220px !important;
     }
-    
-    
+
+
 }
